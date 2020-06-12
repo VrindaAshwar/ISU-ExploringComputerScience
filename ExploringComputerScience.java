@@ -75,13 +75,14 @@ public class ExploringComputerScience {
 		System.out.println("Would you like to explore another topic of choice?");
 		String userChoice2= input.next();
 		userChoice2 = userChoice2.toLowerCase();
+		// keep loop going if user wants to continue
 		while (userChoice2.equals("yes")) {
 			// User choose topic
 			System.out.println("Type in your topic of choice: Personal, Community, National, Global");
 			String userChoice3= input.next();
 			//change to lowercase
 			userChoice3 = userChoice3.toLowerCase();
-			// if user knows about negative effects on the environment and human health output appropriate info
+			// output appropriate info based on users choice
 			if (userChoice3.equals("personal")) {
 				System.out.println();
 				System.out.println("Here is the problem: Prescriptions and medicine not being available for each unique person.");
@@ -134,14 +135,15 @@ public class ExploringComputerScience {
 				System.out.println();
 				System.out.println("Career fields: Computer science");
 			}
-
+				// Ask if user wants to continue, if yes, the loop goes on
 				System.out.println("Would you like to explore another topic of choice?");
 				String userChoice4= input.next();
 				userChoice4 = userChoice4.toLowerCase();
 				if (userChoice4.equals("yes")) {
 					userChoice4=userChoice2;
 				}
-				if (userChoice4.equals("no")) {
+				// break if no
+				else if (userChoice4.equals("no")) {
 					break;
 				}
 
